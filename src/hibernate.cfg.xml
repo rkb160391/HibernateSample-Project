@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   
+     <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+     <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+      <!-- Assume students is the database name -->
+   
+      <property name = "hibernate.connection.url">jdbc:mysql://10.52.208.89:3306/</property>
+      <property name = "hibernate.connection.username">yukonuser</property>
+      <property name = "hibernate.connection.password">yukonpass</property>
+      <property name = "hbm2ddl.auto">create</property>
+      <property name = "hibernate.default_schema">Harman</property>
+     
+
+   </session-factory>
+</hibernate-configuration>
